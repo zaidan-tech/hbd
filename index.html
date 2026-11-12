@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Untuk Salwa</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="hati" aria-hidden="true"></div>
+<main>
+  <section id="s-hitung" class="scene active">
+    <p id="hitung-kecil" class="kecil"></p>
+    <h1 id="hitung-judul"></h1>
+    <div id="jam" role="timer">
+      <div><b id="j-h">00</b><span>hari</span></div><div><b id="j-j">00</b><span>jam</span></div>
+      <div><b id="j-m">00</b><span>menit</span></div><div><b id="j-d">00</b><span>detik</span></div>
+    </div>
+    <button id="btn-mulai" class="btn" hidden></button>
+  </section>
+
+  <section id="s-kue" class="scene">
+    <h2 id="kue-judul"></h2>
+    <svg id="kue" viewBox="0 0 300 260" role="img" aria-label="Kue ulang tahun dengan tiga lilin">
+      <defs><radialGradient id="cahaya"><stop offset="0" stop-color="#ffd28a" stop-opacity=".55"/><stop offset="1" stop-color="#ffd28a" stop-opacity="0"/></radialGradient></defs>
+      <circle class="cahaya" cx="150" cy="40" r="110" fill="url(#cahaya)"/>
+      <ellipse cx="150" cy="238" rx="132" ry="14" fill="#000" opacity=".3"/>
+      <rect x="40" y="150" width="220" height="84" rx="14" fill="#c9566f"/>
+      <rect x="40" y="150" width="220" height="12" rx="6" fill="#fbeff0"/>
+      <rect x="70" y="100" width="160" height="56" rx="12" fill="#e8a0b4"/>
+      <path d="M70 100H230V118Q220 138 210 118Q200 132 190 118Q180 140 170 118Q160 134 150 118Q140 140 130 118Q120 132 110 118Q100 138 90 118Q80 130 70 118Z" fill="#fbeff0"/>
+      <g fill="#ffd28a">
+        <rect x="118" y="62" width="8" height="40" rx="2"/><rect x="146" y="62" width="8" height="40" rx="2"/><rect x="174" y="62" width="8" height="40" rx="2"/>
+      </g>
+      <g transform="translate(122 58)"><g class="api"><path d="M0 0C-7-8-4-18 0-26C4-18 7-8 0 0Z" fill="#ffb347"/></g></g>
+      <g transform="translate(150 58)"><g class="api"><path d="M0 0C-7-8-4-18 0-26C4-18 7-8 0 0Z" fill="#ffb347"/></g></g>
+      <g transform="translate(178 58)"><g class="api"><path d="M0 0C-7-8-4-18 0-26C4-18 7-8 0 0Z" fill="#ffb347"/></g></g>
+    </svg>
+    <p id="kue-petunjuk" class="kecil"></p>
+    <button id="btn-tiup" class="btn ghost"></button>
+  </section>
+
+  <section id="s-foto" class="scene">
+    <h2 id="foto-judul"></h2>
+    <div class="busur"><img id="foto-img" alt=""></div>
+    <p id="foto-cap" class="nama-besar"></p>
+    <button id="btn-lanjut1" class="btn"></button>
+  </section>
+
+  <section id="s-tanya" class="scene">
+    <h2 id="tanya-judul"></h2>
+    <p id="tanya-kecil" class="kecil"></p>
+    <div class="pilihan"><button id="btn-mau" class="btn"></button><button id="btn-nggak" class="btn ghost"></button></div>
+  </section>
+
+  <section id="s-pilih" class="scene">
+    <h2 id="pilih-judul"></h2>
+    <p id="pilih-kecil" class="kecil"></p>
+    <div id="daftar-surat" class="daftar"></div>
+    <button id="btn-akhir" class="btn" hidden></button>
+  </section>
+
+  <section id="s-surat" class="scene">
+    <article id="kartu">
+      <h2 id="kartu-judul"></h2>
+      <div id="kartu-isi"></div>
+      <p id="kartu-ttd"></p>
+      <button id="btn-kembali" class="btn ghost"></button>
+    </article>
+  </section>
+<section id="s-akhir" class="scene">
+    <div class="belah">
+      <img id="foto-img2" alt="">
+      <div class="sisi">
+        <h2 id="akhir-nama"></h2>
+        <p id="akhir-ucapan" class="ucapan"></p>
+      </div>
+    </div>
+  </section>
+</main>
+<audio id="musik" loop></audio>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
